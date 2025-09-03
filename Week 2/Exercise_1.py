@@ -2,16 +2,16 @@
 
 # Global Variables
 remaining_tickets = 10
-total_customers = 0
+buyers = 0
 
 # subtracts tickets bought from remaining tickets; tallies total customers
 def buy_tickets(order):
     global remaining_tickets
-    global total_customers
+    global buyers
 
     if order <= remaining_tickets:
         remaining_tickets -= order
-        total_customers += 1
+        buyers += 1
         return True
     else:
         return False
@@ -40,4 +40,4 @@ print("Available Tickets: 10")
 
 customer_prompt()
 print("\nAll tickets available for pre-sale have been sold!")
-print("Total customers:", total_customers)
+print("Total customers:", buyers)
