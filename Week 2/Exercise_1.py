@@ -1,7 +1,7 @@
 # Exercise 1 - Vanessa Belous
 
 # Global Variables
-remaining_tickets = 20
+remaining_tickets = 10
 total_customers = 0
 
 # subtracts tickets bought from remaining tickets; tallies total customers
@@ -36,7 +36,7 @@ def customer_prompt():
 
 print("Welcome to Vanessa's Cinema!")
 print("(Presale tickets are limited to four per customer.)")
-print("Available Tickets: 20")
+print("Available Tickets: 10")
 
 customer_prompt()
 print("\nAll tickets available for pre-sale have been sold!")
