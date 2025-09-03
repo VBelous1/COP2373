@@ -23,7 +23,7 @@ def customer_prompt():
     can_buy = True
 
     while remaining_tickets > 0:
-        order = int(input("\nHow many tickets would you like to buy? "))
+        order = int(input("\nHow many tickets would you like to purchase today? "))
         if order <= 4:
             can_buy = buy_tickets(order)
             if can_buy == False:
